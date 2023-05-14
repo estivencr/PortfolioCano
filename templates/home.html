@@ -4,126 +4,137 @@
 
 <body>
 
-    <header class="text-center py-5">
-        <div class="container">
-            <h1 class="page-header__title lh-tight t-primary t-outline mt-5 fs-1">Bienvenido a mi portfolio</h1>
-            <p class="lead">Un vistazo a mis proyectos y habilidades</p>
+    <div class="pagewrap m-4">
+        <div class="page-header__title lh-tight t-primary t-outline" style="margin-top: 100px;">
+            <h1 class="display-2">
+                ¡Hola! 
+                <br>
+                Soy <b>Stiven Cano<span>.</span></b></h1>
         </div>
-    </header>
 
-    <section id="about" class="py-5 mt-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 d-flex justify-content-center">
-                    <img src="{{ url_for('static', filename='img/foto.jpg') }}" class="img-fluid rounded-circle mb-3"
-                        alt="Profile Image">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="display-4">Acerca de mí</h2>
-                    <p class="lead">¡Hola! Soy Stiven Cano, un desarrollador full stack apasionado por el mundo
-                        informático y la programación. Me encanta explorar nuevas tecnologías y desafiar mis habilidades
-                        para crear soluciones innovadoras.
-                        <br><br>
-                        Mi viaje en la programación comenzó cuando realicé un técnico laboral en programación en el
-                        proyecto Mintic2022. Fue allí donde descubrí mi pasión por el desarrollo de software y desde
-                        entonces he estado inmerso en proyectos utilizando lenguajes como Java y Python.
-                        <br><br>
-                        A lo largo de mi carrera, he adquirido una sólida experiencia en el desarrollo de aplicaciones
-                        web, tanto en el front-end como en el back-end. He trabajado en proyectos que han requerido el
-                        uso de frameworks como Spring y Flask, y he tenido la oportunidad de colaborar en equipos
-                        multidisciplinarios, lo que me ha permitido aprender y crecer profesionalmente.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio" class="bg-light py-5 mt-5">
-        <div class="container">
-            <h2 class="display-4 text-center mb-5">Mi Portfolio</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <figure class="card-img-top">
-                            <img src="{{ url_for('static', filename='img/portfolio1.jpeg') }}" alt="Project 1">
-                            <figcaption class="position-absolute  align-items-center justify-content-center">
-                                <div class="text-white text-center">
-                                    <h5 class="card-title">Votaap website</h5>
-                                    <p class="card-text">Web application for conducting voting. The page is made with a Java backend using Spring Boot and a HTML and CSS frontend.</p>
-                                </div>
-                            </figcaption>
-                        </figure>
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <img src="static/img/foto.jpg" class="img-fluid rounded-circle mb-3" alt="Foto de perfil">
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="{{ url_for('static', filename='img/portfolio2.jpeg') }}" class="card-img-top" alt="Project 2">
-                        <figcaption class="card-body">
-                            <h5 class="card-title">Website Analitics</h5>
-                            <p class="card-text">This project aims to show an interactive map that displays the different levels of severity of pests in the fields. The map will show the different levels of severity of pests in specific regions. The user can interact with the map to view data for a specific region or to view aggregated data for the entire region. The data can be filtered by type of pest, amount of pests, and other parameters. The data will be gathered from local farmers and will be updated weekly to show an accurate picture of the severity of pests in the fields. The goal of this project is to provide farmers with accurate information about the level of threat of pests in their fields so that they can make informed decisions about pest control.</p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="{{ url_for('static', filename='img/portfolio3.jpeg') }}" class="card-img-top" alt="Project 3">
-                        <figcaption class="card-body">
-                            <h5 class="card-title">Employee CRUD</h5>
-                            <p class="card-text">This project consists of developing a CRUD (Create, Read, Update and Delete) application for managing employee records in Java using MySQL as the database. This application will allow users to create, update, delete and view employee records. This will include the basic employee information such as name, address, phone number, etc., as well as job and location related information. The system will also provide tools to perform searches, filter results and export the records to a CSV file for further use.</p>
-                        </figcaption>
+                    <div class="col-lg-6">
+                        <h2 class="display-4">Mí Historia</h2>
+                        <p class="lead">¡Hola! Soy un desarrollador full stack apasionado por el mundo
+                            informático y la programación. Me encanta explorar nuevas tecnologías y desafiar mis habilidades
+                            para crear soluciones innovadoras.</p>
+                        <p class="lead">Mi viaje en la programación comenzó cuando realicé un técnico laboral en programación
+                            en el proyecto Mintic2022. Fue allí donde descubrí mi pasión por el desarrollo de software y desde
+                            entonces he estado inmerso en proyectos utilizando lenguajes como Java y Python.</p>
+                        <p class="lead">A lo largo de mi carrera, he adquirido una sólida experiencia en el desarrollo de
+                            aplicaciones web, tanto en el front-end como en el back-end. He trabajado en proyectos que han
+                            requerido el uso de frameworks como Spring y Flask, y he tenido la oportunidad de colaborar en
+                            equipos multidisciplinarios, lo que me ha permitido aprender y crecer profesionalmente.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="portfolio" class="bg-light py-5 mt-5">
+            <div class="container">
+                <h2 class="display-4 text-center mb-5">Mi Portfolio</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <figure class="card-img-top">
+                                <img src="{{ url_for('static', filename='img/portfolio1.jpeg') }}" alt="Project 1">
+                                <figcaption class="position-absolute  align-items-center justify-content-center">
+                                    <div class="text-white text-center">
+                                        <h5 class="card-title">Votaap website</h5>
+                                        <p class="card-text">Web application for conducting voting. The page is made with a
+                                            Java backend using Spring Boot and a HTML and CSS frontend.</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <figure class="card-img-top">
+                                <img src="{{ url_for('static', filename='img/portfolio1.jpeg') }}" alt="Project 1">
+                                <figcaption class="position-absolute  align-items-center justify-content-center">
+                                    <div class="text-white text-center">
+                                        <h5 class="card-title">Votaap website</h5>
+                                        <p class="card-text">Web application for conducting voting. The page is made with a
+                                            Java backend using Spring Boot and a HTML and CSS frontend.</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <figure class="card-img-top">
+                                <img src="{{ url_for('static', filename='img/portfolio1.jpeg') }}" alt="Project 1">
+                                <figcaption class="position-absolute  align-items-center justify-content-center">
+                                    <div class="text-white text-center">
+                                        <h5 class="card-title">Votaap website</h5>
+                                        <p class="card-text">Web application for conducting voting. The page is made with a
+                                            Java backend using Spring Boot and a HTML and CSS frontend.</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="display-4 text-center mb-5">Contacto</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Información de contacto</h4>
-                    <p><i class="fa fa-envelope"></i> Estivenrendon1@outlook.es</p>
-                    <p><i class="fa fa-phone"></i> +57 3125240069</p>
-                    <p><i class="fa fa-map-marker"></i> Jardín-Antioquia, Colombia</p>
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="display-4 text-center mb-5">Contacto</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Información de contacto</h4>
+                        <p><i class="fa fa-envelope"></i> Estivenrendon1@outlook.es</p>
+                        <p><i class="fa fa-phone"></i> +57 3125240069</p>
+                        <p><i class="fa fa-map-marker"></i> Jardín-Antioquia, Colombia</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <script>
-        function showText(image) {
-            image.nextElementSibling.style.display = "block";
-        }
-        
-        function hideText(image) {
-            image.nextElementSibling.style.display = "none";
-        }
-    </script>
-
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2023 Mi Portfolio</p>
-        </div>
-    </footer>
-
-    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        </section>
+    
+        <script>
+            function showText(image) {
+                image.nextElementSibling.style.display = "block";
+            }
+    
+            function hideText(image) {
+                image.nextElementSibling.style.display = "none";
+            }
+        </script>
+    
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy; 2023 Mi Portfolio</p>
+            </div>
+        </footer>
+    
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    
+    </div>
+    
 </body>
-
 
 {% endblock %}
